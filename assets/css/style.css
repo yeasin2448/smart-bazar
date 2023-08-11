@@ -996,6 +996,50 @@ ul.pr_status li.des_btn .item_text h6 {
   font-family: "Rubik", sans-serif;
 }
 
+/*== review page css ==*/
+.product_reivew {
+  padding: 30px 0;
+}
+
+.sec_header h4 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 12px;
+  font-family: "Rubik", sans-serif;
+}
+
+.sec_wrap {
+  gap: 14px;
+  display: flex;
+  padding-top: 12px;
+  align-items: flex-start;
+  border-top: 1px solid #00000059;
+}
+
+.sec_wrap .review_rating {
+  width: 100%;
+}
+
+.review_rating h5 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  font-family: "Rubik", sans-serif;
+}
+
+.review_rating .review_content {
+  padding: 32px 16px;
+  text-align: center;
+  border-radius: 6px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px 0px rgba(46, 49, 146, 0.08);
+}
+
+/*== page respnsive css ==*/
+
 @media (min-width: 576px) {
   .container {
     padding: 0 16px;
@@ -1037,6 +1081,10 @@ ul.pr_status li.des_btn .item_text h6 {
   }
   .details_drop .drop_inner {
     width: 400px;
+  }
+  /*== review css ==*/
+  .sec_wrap .review_rating {
+    width: 250px;
   }
 }
 
@@ -1086,6 +1134,16 @@ ul.pr_status li.des_btn .item_text h6 {
   ul.pr_status li.des_btn .item_text h6 {
     font-size: 16px;
   }
+  /*== review css ==*/
+  .product_reivew {
+    padding: 40px 0;
+  }
+  .sec_header h4 {
+    font-size: 20px;
+  }
+  .review_rating h5 {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1102,6 +1160,10 @@ ul.pr_status li.des_btn .item_text h6 {
   }
   .details_drop .drop_inner h6 {
     font-size: 25px;
+  }
+  /*== review css ==*/
+  .sec_wrap .review_rating {
+    width: 340px;
   }
 }
 
