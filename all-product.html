@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- syle css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Smart Bazar</title>
+  </head>
+  <body>
+    <!-- product filter start -->
+    <section class="product_filter">
+      <div class="container">
+        <div class="category_sidebar">
+          <h4>Women's Fashion</h4>
+          <div class="accordion-wrap pt-2 md:pr-6 pl-6">
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Rain Coat
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2"></ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Womens Bags
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2"></ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Bottoms
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2">
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Shorts
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Jeans
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Skirts
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Pants &amp; Capris
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Trousers &amp; Leggings
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Palazzo
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Lingerie &amp; Nightwear
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2">
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Bra &amp; Panties
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Socks &amp; Hosiery
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Lingerie Sets
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Maternity &amp; Nursing
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Non-wired Bras
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Sports Bras
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Knickers
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Multi-pack nightwear
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Nightdresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Shapeware
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Vests &amp; Thermals
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Sexy Lingerie
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Pajama Sets
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Suspenders
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Sports &amp; Activities
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2">
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Sportswear
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Gym &amp; Training
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Outdoors
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Running
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Yoga &amp; Studio
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Swimwear &amp; Beachwear
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Events &amp; Occasions
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2">
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Day Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Evening Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Workwear
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Bridal Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Wedding guest Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Party Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Floral Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Summer Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Travelling Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Holiday Dresses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Modest fashion
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Cosplay Costumes
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Muslim Fashion
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2">
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Abaya
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Borka
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Muslim Sets
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Women's Hijabs
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Prayer Hats
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Tradintional Dresses
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2">
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Bangladesh
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      India
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Pakistan
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Fashion Accessories
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2">
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Sunglasses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Sunglasses Accessories
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Glasses
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Caps
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Hats
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Belts
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Belt Buckles
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Hair Accessories
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Wristbands
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Bandanas
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Headbands
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Neck Warmers
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Snoods
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Beanies
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Fascinators &amp; Headpieces
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Gloves &amp; Mittens
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Apparel
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2"></ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Western Dress
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2"></ul>
+              </div>
+            </div>
+            <div class="accordion_item pt-2">
+              <div
+                class="accordion__title flex justify-between items-center cursor-pointer"
+              >
+                <p class="text-black text-base font-archivo font-medium block">
+                  Shoes
+                </p>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  t="1551322312294"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  class="ex_icon transition-all"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs></defs>
+                  <path
+                    d="M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"
+                  ></path>
+                  <path
+                    d="M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="overflow-hidden will-change-auto transition-all pl-2 invisible h-0 ease-out"
+              >
+                <ul class="flex flex-col gap-1 mt-2">
+                  <li>
+                    <button
+                      class="text-black text-sm font-archivo font-normal block transition-all hover:text-theme_color"
+                    >
+                      Shoes
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product filter ends  -->
+
+    <!-- optional js -->
+    <script src="assets/js/function.js"></script>
+  </body>
+</html>
