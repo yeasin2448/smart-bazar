@@ -132,6 +132,129 @@ ul {
   width: 100%;
 }
 
+/* ========== */
+#va_container {
+  position: relative;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.va-thumbnail {
+  border-radius: 5px;
+  border: 0px;
+  max-width: 100%;
+}
+
+.va-carrousel-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.va-carrousel-flexbox .va-card {
+  flex: 0 0 auto;
+  padding-left: 15px;
+}
+
+.va-carrousel-flexbox .va-card:last-child {
+  margin-right: 15px;
+}
+
+.va-carrousel-flexbox .va-card:last-child::after {
+  content: " ";
+  display: inline-block;
+}
+
+.va-card {
+  width: 100px;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+.va-card:hover {
+  user-select: none;
+  outline: none;
+}
+
+.va-card a {
+  display: block;
+}
+
+.va-carrousel,
+.va-carrousel-flexbox {
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.va-carrousel::-webkit-scrollbar,
+.va-carrousel-flexbox::-webkit-scrollbar {
+  display: none;
+}
+
+.cat_card_title {
+  margin-top: 8px;
+  font-size: 12px;
+  max-height: 3em;
+  overflow: hidden;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+}
+
+.deals-paddle {
+  height: 38px;
+  width: 38px;
+  color: white;
+  background-color: #00000089;
+  border-radius: 50%;
+  border: 0px solid;
+  margin: 32px 0 auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.deals-paddle:focus {
+  outline: none;
+}
+
+.deals-paddle:active {
+  border-style: solid;
+  outline: none;
+  user-select: none;
+}
+
+.deals-paddle svg {
+  width: 10px;
+}
+
+.deals-scroll-left {
+  top: 0;
+  left: 5px;
+  bottom: 0;
+}
+
+.deals-scroll-right {
+  top: 0;
+  bottom: 0;
+  right: 5px;
+}
+
+.category_slider {
+  padding: 0px;
+  position: relative;
+}
+
+.slide_wraper {
+  /*         background-color: white; */
+  /* padding-top: 15px;
+  margin-top: 15px; */
+}
+
 /*== page respnsive css ==*/
 
 @media (min-width: 576px) {
@@ -141,6 +264,16 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .category_slider {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .other-game-button {
+    width: 300px;
+  }
+  .cat_card_title {
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 992px) {
