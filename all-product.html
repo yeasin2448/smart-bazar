@@ -412,7 +412,7 @@
                     </button>
                   </li>
                   <li class="list_dropdown">
-                    <button type="button" class="selected_type">
+                    <button type="button" class="dropdown-toggle">
                       Size
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -463,6 +463,174 @@
                             class="select_control"
                           />
                           <label for="type3">XL</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="list_dropdown">
+                    <button type="button" class="dropdown-toggle">
+                      Size Type
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        width="14"
+                        height="14"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </button>
+                    <div class="drop_content">
+                      <ul class="cont_list">
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type4"
+                            class="select_control"
+                          />
+                          <label for="type4">Juniors</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type5"
+                            class="select_control"
+                          />
+                          <label for="type5">Maternity</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type6"
+                            class="select_control"
+                          />
+                          <label for="type6">Petites</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type7"
+                            class="select_control"
+                          />
+                          <label for="type7">Plus</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="list_dropdown">
+                    <button type="button" class="dropdown-toggle">
+                      Color
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        width="14"
+                        height="14"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </button>
+                    <div class="drop_content">
+                      <ul class="cont_list">
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type8"
+                            class="select_control"
+                          />
+                          <label for="type8">Black</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type9"
+                            class="select_control"
+                          />
+                          <label for="type9">White</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type10"
+                            class="select_control"
+                          />
+                          <label for="type10">Yewllow</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type11"
+                            class="select_control"
+                          />
+                          <label for="type11">Geen</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="list_dropdown">
+                    <button type="button" class="dropdown-toggle">
+                      Brand
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        width="14"
+                        height="14"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </button>
+                    <div class="drop_content">
+                      <ul class="cont_list">
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type8"
+                            class="select_control"
+                          />
+                          <label for="type8">Nicky</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type9"
+                            class="select_control"
+                          />
+                          <label for="type9">Axions</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type10"
+                            class="select_control"
+                          />
+                          <label for="type10">Jentel Park</label>
+                        </li>
+                        <li>
+                          <input
+                            type="checkbox"
+                            id="type11"
+                            class="select_control"
+                          />
+                          <label for="type11">Geen</label>
                         </li>
                       </ul>
                     </div>
@@ -1743,6 +1911,37 @@
     <!-- optional js -->
     <script src="assets/js/function.js"></script>
     <script>
+      const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+      dropdownToggles.forEach((toggle) => {
+        toggle.addEventListener("click", (event) => {
+          const parentDropdown = toggle.parentElement;
+          const dropdownContent = parentDropdown.querySelector(".drop_content");
+
+          // Hide all other dropdowns
+          document.querySelectorAll(".drop_content").forEach((content) => {
+            if (content !== dropdownContent) {
+              content.style.display = "none";
+            }
+          });
+
+          // Toggle the clicked dropdown
+          dropdownContent.style.display =
+            dropdownContent.style.display === "block" ? "none" : "block";
+
+          // Prevent the click event from propagating to the document
+          event.stopPropagation();
+        });
+      });
+
+      // Add a click event listener to the document to hide all dropdowns when clicking outside
+      document.addEventListener("click", () => {
+        document.querySelectorAll(".drop_content").forEach((content) => {
+          content.style.display = "none";
+        });
+      });
+    </script>
+    <!-- <script>
       // accordion js
       const accordions = document.querySelectorAll(".accordion_item");
 
@@ -1838,6 +2037,6 @@
       }
       // Initiate the container with ID
       initDealCarrousel("va_container"); //carrousel ID
-    </script>
+    </script> -->
   </body>
 </html>
