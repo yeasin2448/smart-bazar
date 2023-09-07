@@ -36,8 +36,8 @@ ul {
   padding: 0 8px;
 }
 
-/*== shoping css start ==*/
-.shoping_cart {
+/*== checkout cart css start ==*/
+.checkout_cart {
   padding: 60px 0;
 }
 
@@ -48,8 +48,11 @@ ul {
   flex-direction: column;
 }
 
-.sec_wrap .cart_layout {
+.sec_wrap .check_layout {
   width: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sec_title h3 {
@@ -58,35 +61,32 @@ ul {
   font-weight: 600;
 }
 
-.all_cart_status {
-  padding: 10px;
-  background: #fff;
+.check_layout .address_status {
+  padding: 16px;
   border-radius: 6px;
-  margin-top: 12px;
   box-shadow: var(--common-shdow);
+  background: #ffffff;
 }
 
-.all_cart_status .select_all {
+.address_status h4 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.address_status button {
   gap: 8px;
   display: flex;
   align-items: center;
-}
-
-.select_all input {
-  height: 20px;
-  width: 20px;
-}
-
-.select_all h4 {
-  color: #000;
-  font-size: 18px;
-  font-weight: 500;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 12px;
 }
 
 .cart_content {
   gap: 16px;
   display: flex;
-  margin-top: 16px;
   flex-direction: column;
 }
 
@@ -101,11 +101,7 @@ ul {
   align-items: center;
   padding: 10px;
   box-shadow: var(--common-shdow);
-}
-
-.select_group input {
-  width: 16px;
-  height: 16px;
+  background: #fff;
 }
 
 .select_group .store_name {
@@ -126,16 +122,6 @@ ul {
   color: #000;
   font-size: 20px;
   font-weight: 400;
-}
-
-.store_name a {
-  height: 25px;
-  width: 25px;
-  line-height: 30px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 100%;
-  background: #c0bfbf;
 }
 
 .cart_product_inner .product_item {
@@ -163,8 +149,8 @@ ul {
 }
 
 .product_item .item_thumb {
-  height: 150px;
-  width: 150px;
+  height: 80px;
+  width: 80px;
 }
 
 .item_inner .item_thumb img {
@@ -196,25 +182,6 @@ ul {
   display: inline-block;
 }
 
-.item_content .stock_status span {
-  color: var(--main-color);
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.item_content .color_status {
-  padding: 4px 0 8px;
-}
-
-.item_content .color_status p {
-  gap: 8px;
-  display: flex;
-  align-items: center;
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
-}
-
 .pr_qty label {
   color: #000;
   font-size: 14px;
@@ -231,25 +198,6 @@ ul {
   outline: none;
 }
 
-.item_content .pr_links {
-  gap: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-top: 12px;
-}
-
-.pr_links a {
-  color: #4a4a4a;
-  font-size: 14px;
-  gap: 4px;
-  display: flex;
-  align-items: center;
-  padding: 6px 12px;
-  border-radius: 6px;
-  background: #b8b4b460;
-}
-
 .cart_summary {
   top: 0;
   width: 100%;
@@ -257,6 +205,34 @@ ul {
   gap: 16px;
   display: flex;
   flex-direction: column;
+}
+
+.promo_code .promo_form {
+  gap: 8px;
+  display: flex;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: var(--common-shdow);
+}
+
+.promo_form input {
+  height: 32px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  width: calc(100% - 128px);
+  border: 0.5px solid #838383;
+}
+
+.promo_form input:focus {
+  outline: none;
+}
+
+.promo_form button.promo_btn {
+  color: #fff;
+  width: 120px;
+  padding: 8px 4px;
+  border-radius: 6px;
+  background: var(--main-color);
 }
 
 .cart_summary .order_summary,
@@ -303,6 +279,12 @@ ul.summary_list li span {
   font-weight: 400;
 }
 
+ul.summary_list li p {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .order_summary button.check_btn {
   color: #fff;
   font-size: 14px;
@@ -336,8 +318,8 @@ ul.summary_list li span {
     flex-direction: row;
   }
   .product_item .item_thumb {
-    height: 180px;
-    width: 180px;
+    height: 100px;
+    width: 100px;
   }
   .item_inner .item_content {
     width: calc(100% - 192px);
@@ -349,12 +331,12 @@ ul.summary_list li span {
     font-size: 24px;
   }
   .item_content h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
   .sec_wrap {
     flex-direction: row;
   }
-  .sec_wrap .cart_layout {
+  .sec_wrap .check_layout {
     width: calc(100% - 316px);
   }
   .product_item .item_inner {
@@ -386,7 +368,7 @@ ul.summary_list li span {
     padding-right: 2rem;
     padding-left: 2rem;
   }
-  .sec_wrap .cart_layout {
+  .sec_wrap .check_layout {
     width: calc(100% - 416px);
   }
   .cart_summary {
