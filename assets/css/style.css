@@ -453,6 +453,21 @@ a.ct_computer span::before {
 
 /*=== banner css ends  ===*/
 
+/* === flash sale css === */
+.flash_sale {
+  padding: 60px 0;
+}
+
+.flash_sale .section_header {
+  padding-bottom: 24px;
+}
+
+.flash_sale .section_header h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 /*== page responsive css ==*/
 
 @media (max-width: 767px) {
