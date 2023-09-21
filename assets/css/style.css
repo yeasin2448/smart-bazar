@@ -528,7 +528,7 @@ a.ct_computer span::before {
 
 @media (min-width: 1400px) {
   .container {
-    padding: 0 48px;
-    max-width: 1400px;
+    padding: 0 80px;
+    max-width: 100%;
   }
 }
