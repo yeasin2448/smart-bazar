@@ -89,7 +89,7 @@ header .header_top {
 }
 
 .header_middel {
-  padding: 10px 0;
+  padding: 18px 0;
   box-shadow: var(--common-shdow);
 }
 
@@ -127,13 +127,17 @@ header .header_top {
   width: 100%;
 }
 
+.header_main .header_search{
+  background: #fff;
+}
+
 .header_search form input {
   height: 40px;
   width: 100%;
   border-radius: 6px;
   box-sizing: border-box;
   padding: 5px 32px 5px 5px;
-  border: 0.5px solid #4a4a4a;
+  border: 0.5px solid #ff6801;
 }
 
 .header_search form input:focus,
@@ -164,7 +168,7 @@ form select {
   -webkit-appearance: none;
   transform: translateY(-50%);
   border-radius: 6px 0 0 6px;
-  border-right: 0.5px solid #ccc;
+  border-right: 0.5px solid #ff6801;
 }
 
 .header_search form label i {
