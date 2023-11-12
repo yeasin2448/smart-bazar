@@ -332,6 +332,19 @@
       .order_summary button.check_btn:hover {
         background: #000;
       }
+      ul.card_list {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+      ul.card_list li {
+        padding: 6px;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: var(--common-shdow);
+      }
       /*== page respnsive css ==*/
 
       @media (max-width: 767px) {
@@ -792,6 +805,28 @@
             </div>
             <div class="card_content">
               <h4>Payment Method</h4>
+              <ul class="card_list">
+                <li>
+                  <a href="#0">
+                    <img src="assets/img/card/visa.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#0">
+                    <img src="assets/img/card/maestro.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#0">
+                    <img src="assets/img/card/master.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#0">
+                    <img src="assets/img/card/jcb.png" alt="">
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
