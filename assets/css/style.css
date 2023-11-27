@@ -324,6 +324,11 @@ ul.menu_list li .auth_dropdown {
   transition: all 0.3s ease-in-out;
 }
 
+ul.menu_list li:hover .auth_dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
 ul.menu_list li .auth_dropdown.active {
   opacity: 1;
   visibility: visible;
